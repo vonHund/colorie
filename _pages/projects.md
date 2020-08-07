@@ -1,4 +1,5 @@
 ---
 layout: projects
-title: Projects
+title: Performance
+
 ---

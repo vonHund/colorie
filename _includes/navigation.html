@@ -1,9 +1,16 @@
 <nav role="navigation">
   <ul>
+    {% for item in site.menus.header %}
+      <li>
+        <a href="{{ item.url }}" title="Go to {{ item.title }}" {% if page.url == item.url %}class="active"{% endif %}>{{ item.title }}</a>
+      </li>
+    {% endfor %}
+    <!-- Kept for reference when rebuilding the menu in forestry
     <li><a href="/" {% if page.url == "/" %}class="active"{% endif %}>Home</a></li>
     <li><a href="/tags" {% if page.url == "/tags" %}class="active"{% endif %}>Tags</a></li>
     <li><a href="/about" {% if page.url == "/about" %}class="active"{% endif %}>About</a></li>
     <li><a href="/projects" {% if page.url == "/projects" %}class="active"{% endif %}>Projects</a></li>
     <li><a href="/atom.xml">Feed</a></li>
+    -->
   </ul>
 </nav>

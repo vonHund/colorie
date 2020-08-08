@@ -13,3 +13,5 @@ fields:
   config:
     required: false
   label: menus
+pages:
+- _pages/about.md
